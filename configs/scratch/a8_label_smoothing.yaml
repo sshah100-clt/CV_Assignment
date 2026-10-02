@@ -1,0 +1,5 @@
+# A8 - Does label smoothing improve generalisation (handout question)?
+# Change vs A6: cross-entropy with label smoothing 0.1.
+_base_: a6_res128.yaml
+train:
+  label_smoothing: 0.1

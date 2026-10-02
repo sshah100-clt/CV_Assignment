@@ -1,0 +1,6 @@
+# A3 - Does annealing the learning rate help convergence?
+# Change vs A2: constant LR -> cosine decay with 3 warmup epochs.
+_base_: a2_epochs.yaml
+schedule:
+  name: cosine
+  warmup_epochs: 3

@@ -1,0 +1,41 @@
+# Default settings. Every option is listed here; each experiment config
+# inherits these (through `_base_`) and changes only a few of them.
+data:
+  root: data
+  split_file: splits/folds.json   # 5 folds, stratified, duplicates kept together
+  fold: 0                         # validation fold, set by train.py --fold
+  img_size: 64
+  color: gray                     # only Flower is in colour; gray removes that shortcut
+  channels: 1                     # 3 repeats the gray image for pretrained models
+  normalize: half                 # 'half': [0, 1] -> [-1, 1]; 'imagenet': ImageNet statistics
+  resize_mode: squash             # 'squash' ignores the aspect ratio; 'crop' keeps it
+  num_workers: 6
+  augment:
+    random_resized_crop: null     # e.g. [0.5, 1.0]: crop 50-100% of the image area
+    hflip: false
+
+model:
+  name: tnet                      # tnet, simple_cnn or resnet18
+  widths: [32, 64, 128, 256]      # simple_cnn: channels of the four stages
+  dropout: 0.0                    # simple_cnn: dropout before the classifier
+  attention: none                 # simple_cnn: 'se' adds squeeze-and-excitation
+  pool: avg                       # simple_cnn: 'attention' uses attention pooling
+  pretrained: none                # resnet18: none, imagenet or places365
+  freeze_backbone: false          # resnet18: train only the new classifier
+
+optim:
+  name: adam                      # adam or adamw
+  lr: 0.002
+  weight_decay: 0.0
+  backbone_lr_mult: 1.0           # learning rate of pretrained layers = lr x this
+
+schedule:
+  name: constant                  # constant or cosine
+  warmup_epochs: 0
+
+train:
+  epochs: 20
+  batch_size: 64
+  label_smoothing: 0.0
+  mixup_alpha: 0.0                # > 0 enables Mixup
+  cutmix_alpha: 0.0               # > 0 enables CutMix

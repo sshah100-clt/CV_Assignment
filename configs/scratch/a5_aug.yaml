@@ -1,0 +1,8 @@
+# A5 - Is the model overfitting the ~1,900 training images?
+# Change vs A4: random resized crop (50-100% of the image) + horizontal flip.
+# Flips are label-preserving for scenes; vertical flips / large rotations are not.
+_base_: a4_adamw.yaml
+data:
+  augment:
+    random_resized_crop: [0.5, 1.0]
+    hflip: true

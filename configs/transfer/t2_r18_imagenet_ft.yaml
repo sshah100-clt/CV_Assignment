@@ -1,0 +1,5 @@
+# T2 - Does adapting the whole network help beyond frozen features?
+# Change vs T1: fine-tune all layers (backbone at 0.1x the head's lr).
+_base_: t_base.yaml
+model:
+  pretrained: imagenet

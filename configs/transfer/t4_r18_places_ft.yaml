@@ -1,0 +1,4 @@
+# T4 - Fine-tuned Places365 ResNet-18. Change vs T2: Places365 weights.
+_base_: t2_r18_imagenet_ft.yaml
+model:
+  pretrained: places365

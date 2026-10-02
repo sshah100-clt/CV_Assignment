@@ -1,0 +1,6 @@
+# A1 - Is the baseline underfitting (too little capacity)?
+# Change vs A0: TNet -> SimpleCNN (8 conv layers with BatchNorm, global average pooling).
+_base_: a0_baseline.yaml
+model:
+  name: simple_cnn
+  widths: [32, 64, 128, 256]

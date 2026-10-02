@@ -1,0 +1,5 @@
+# T3 - Does the pretraining domain matter? Places365 (1.8M scene images, 365
+# scene categories) vs ImageNet (objects). Change vs T1: Places365 weights.
+_base_: t1_r18_imagenet_linear.yaml
+model:
+  pretrained: places365

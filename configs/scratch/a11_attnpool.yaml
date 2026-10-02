@@ -1,0 +1,5 @@
+# A11 - Does soft spatial attention help (lecture: attention mechanism)?
+# Change vs A6: global average pooling -> learned attention pooling over locations.
+_base_: a6_res128.yaml
+model:
+  pool: attention

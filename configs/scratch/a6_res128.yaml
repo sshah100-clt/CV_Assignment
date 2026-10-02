@@ -1,0 +1,5 @@
+# A6 - Does 64x64 discard discriminative detail?
+# Change vs A5: 64 -> 128 pixels.
+_base_: a5_aug.yaml
+data:
+  img_size: 128

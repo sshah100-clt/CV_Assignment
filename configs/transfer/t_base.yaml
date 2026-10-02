@@ -1,0 +1,26 @@
+# Shared fine-tuning recipe for pretrained CNNs (not run on its own).
+# Gray image copied to 3 channels with ImageNet normalisation (both ImageNet
+# and Places365 models were trained with these statistics), 224x224 input.
+# AdamW, new head at lr 1e-3, pretrained backbone at 0.1x that, cosine
+# schedule with 2 warmup epochs, 30 epochs.
+_base_: ../base.yaml
+data:
+  img_size: 224
+  channels: 3
+  normalize: imagenet
+  augment:
+    random_resized_crop: [0.5, 1.0]
+    hflip: true
+model:
+  name: resnet18
+  pretrained: imagenet
+optim:
+  name: adamw
+  lr: 0.001
+  backbone_lr_mult: 0.1
+  weight_decay: 0.05
+schedule:
+  name: cosine
+  warmup_epochs: 2
+train:
+  epochs: 30

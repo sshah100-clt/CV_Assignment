@@ -1,0 +1,5 @@
+# A10 - Does channel attention help a small CNN (lecture: Squeeze-and-Excitation)?
+# Change vs A6: SE block after every conv stage (+~2% parameters).
+_base_: a6_res128.yaml
+model:
+  attention: se

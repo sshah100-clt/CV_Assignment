@@ -1,0 +1,7 @@
+# T1 - How good are frozen ImageNet features for scenes (feature transfer,
+# Oquab et al. 2014 in the CNN lecture)? Only the new linear classifier is
+# trained; the backbone, including BatchNorm statistics, stays fixed.
+_base_: t_base.yaml
+model:
+  pretrained: imagenet
+  freeze_backbone: true

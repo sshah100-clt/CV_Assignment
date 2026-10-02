@@ -1,0 +1,6 @@
+# Final model: the recipe with the best cross-validation accuracy (T4,
+# 95.44 +/- 0.21%): ResNet-18 pretrained on Places365, fine-tuned at 224 px.
+# The final prediction averages the five fold models of seed 0:
+#   python scripts/launch.py configs/best.yaml --seeds 0
+#   python evaluate.py --checkpoint runs/best/f{0,1,2,3,4}_s0/last.pt
+_base_: transfer/t4_r18_places_ft.yaml

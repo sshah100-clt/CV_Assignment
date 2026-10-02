@@ -1,0 +1,7 @@
+# X2 - The image-size shortcut, from scratch. Change vs A1: aspect-preserving
+# resize + centre crop instead of squashing. Image size is class-specific
+# (scripts/metadata_baseline.py: 27% test accuracy from size and colour mode alone), and
+# squashing turns size into a visible distortion.
+_base_: ../scratch/a1_simple_cnn.yaml
+data:
+  resize_mode: crop

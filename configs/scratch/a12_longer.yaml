@@ -1,0 +1,5 @@
+# A12 - With strong augmentation, does the model need more epochs?
+# Change vs A6: 60 -> 150 epochs.
+_base_: a6_res128.yaml
+train:
+  epochs: 150

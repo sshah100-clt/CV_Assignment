@@ -1,0 +1,5 @@
+# A2 - Is the deeper CNN under-trained after 20 epochs?
+# Change vs A1: 20 -> 60 epochs (constant learning rate).
+_base_: a1_simple_cnn.yaml
+train:
+  epochs: 60

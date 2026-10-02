@@ -1,0 +1,7 @@
+# A4 - Does weight decay (regularisation) help?
+# Change vs A3: Adam without weight decay -> AdamW with decoupled weight decay 0.05.
+# Then tune: --grid optim.lr=0.003,0.001,0.0003 optim.weight_decay=0.05,0.005,0.0005
+_base_: a3_cosine.yaml
+optim:
+  name: adamw
+  weight_decay: 0.05

@@ -1,0 +1,6 @@
+# A7 - Do mixing augmentations (lecture: "Data Augmentation in 2020s") help further?
+# Change vs A6: Mixup (alpha 0.2) or CutMix (alpha 1.0), one of them per batch.
+_base_: a6_res128.yaml
+train:
+  mixup_alpha: 0.2
+  cutmix_alpha: 1.0

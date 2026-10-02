@@ -1,0 +1,6 @@
+# A9 - Does dropout before the classifier reduce overfitting (lecture: dropout,
+# augmentation and transfer learning as remedies)?
+# Change vs A6: dropout 0.3 on the pooled features.
+_base_: a6_res128.yaml
+model:
+  dropout: 0.3
