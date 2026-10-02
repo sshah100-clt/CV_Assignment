@@ -1,0 +1,22 @@
+x2_scratch_crop | fold 2 | seed 1 | cuda | 1,176,752 parameters
+epoch   1 | train loss 2.439 acc 0.181 | val loss 3.949 acc 0.069 | 2s
+epoch   2 | train loss 1.902 acc 0.367 | val loss 2.156 acc 0.285 | 4s
+epoch   3 | train loss 1.448 acc 0.519 | val loss 1.645 acc 0.433 | 6s
+epoch   4 | train loss 1.212 acc 0.593 | val loss 2.005 acc 0.450 | 8s
+epoch   5 | train loss 1.030 acc 0.646 | val loss 2.257 acc 0.369 | 10s
+epoch   6 | train loss 0.891 acc 0.699 | val loss 1.106 acc 0.610 | 12s
+epoch   7 | train loss 0.786 acc 0.751 | val loss 1.275 acc 0.604 | 14s
+epoch   8 | train loss 0.730 acc 0.754 | val loss 1.610 acc 0.527 | 16s
+epoch   9 | train loss 0.568 acc 0.809 | val loss 0.909 acc 0.683 | 18s
+epoch  10 | train loss 0.501 acc 0.831 | val loss 1.032 acc 0.673 | 20s
+epoch  11 | train loss 0.442 acc 0.849 | val loss 1.356 acc 0.579 | 21s
+epoch  12 | train loss 0.432 acc 0.849 | val loss 1.346 acc 0.590 | 22s
+epoch  13 | train loss 0.327 acc 0.895 | val loss 1.059 acc 0.677 | 23s
+epoch  14 | train loss 0.290 acc 0.902 | val loss 1.073 acc 0.675 | 25s
+epoch  15 | train loss 0.244 acc 0.930 | val loss 1.246 acc 0.665 | 26s
+epoch  16 | train loss 0.187 acc 0.941 | val loss 1.044 acc 0.698 | 27s
+epoch  17 | train loss 0.162 acc 0.947 | val loss 1.175 acc 0.690 | 28s
+epoch  18 | train loss 0.156 acc 0.955 | val loss 1.581 acc 0.625 | 30s
+epoch  19 | train loss 0.156 acc 0.953 | val loss 1.217 acc 0.692 | 31s
+epoch  20 | train loss 0.136 acc 0.960 | val loss 1.164 acc 0.710 | 32s
+final validation accuracy 0.7104

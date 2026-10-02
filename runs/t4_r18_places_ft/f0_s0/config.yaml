@@ -1,0 +1,41 @@
+data:
+  root: data
+  split_file: splits/folds.json
+  fold: 0
+  img_size: 224
+  color: gray
+  channels: 3
+  normalize: imagenet
+  resize_mode: squash
+  num_workers: 6
+  augment:
+    random_resized_crop:
+    - 0.5
+    - 1.0
+    hflip: true
+model:
+  name: resnet18
+  widths:
+  - 32
+  - 64
+  - 128
+  - 256
+  dropout: 0.0
+  attention: none
+  pool: avg
+  pretrained: places365
+  freeze_backbone: false
+optim:
+  name: adamw
+  lr: 0.001
+  weight_decay: 0.05
+  backbone_lr_mult: 0.1
+schedule:
+  name: cosine
+  warmup_epochs: 2
+train:
+  epochs: 30
+  batch_size: 64
+  label_smoothing: 0.0
+  mixup_alpha: 0.0
+  cutmix_alpha: 0.0

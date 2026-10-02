@@ -1,0 +1,13 @@
+a,b,seed,acc_a,acc_b,only_a_right,only_b_right,mcnemar_p
+a6_res128,a12_longer,0,0.8583,0.8704,59,88,0.0206
+a6_res128,a12_longer,1,0.8525,0.8671,59,94,0.0058
+a6_res128,a12_longer,2,0.8567,0.8579,74,77,0.871
+a6_res128,a11_attnpool,0,0.8583,0.8329,159,98,0.000171
+a6_res128,a11_attnpool,1,0.8525,0.8229,164,93,1.12e-05
+a6_res128,a11_attnpool,2,0.8567,0.8204,174,87,7.8e-08
+a1_simple_cnn,x2_scratch_crop,0,0.6846,0.6729,300,272,0.259
+a1_simple_cnn,x2_scratch_crop,1,0.6858,0.6729,317,286,0.222
+a1_simple_cnn,x2_scratch_crop,2,0.6808,0.6925,301,329,0.282
+t2_r18_imagenet_ft,t3_r18_places_linear,0,0.935,0.9429,72,91,0.158
+t2_r18_imagenet_ft,t3_r18_places_linear,1,0.9308,0.9433,69,99,0.025
+t2_r18_imagenet_ft,t3_r18_places_linear,2,0.9317,0.9454,63,96,0.0109

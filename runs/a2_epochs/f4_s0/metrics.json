@@ -1,0 +1,16 @@
+{
+  "experiment": "a2_epochs",
+  "fold": 4,
+  "seed": 0,
+  "final_train_acc": 1.0,
+  "final_val_acc": 0.7895833253860474,
+  "params": 1176752,
+  "train_time_s": 155,
+  "overrides": [],
+  "environment": {
+    "python": "3.12.3",
+    "torch": "2.12.1+cu130",
+    "cuda": "13.0",
+    "device": "NVIDIA RTX A5000"
+  }
+}

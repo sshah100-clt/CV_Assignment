@@ -1,0 +1,16 @@
+{
+  "experiment": "a10_se",
+  "fold": 3,
+  "seed": 2,
+  "final_train_acc": 0.990625,
+  "final_val_acc": 0.8416666388511658,
+  "params": 1199052,
+  "train_time_s": 378,
+  "overrides": [],
+  "environment": {
+    "python": "3.12.3",
+    "torch": "2.12.1+cu130",
+    "cuda": "13.0",
+    "device": "NVIDIA RTX A5000"
+  }
+}

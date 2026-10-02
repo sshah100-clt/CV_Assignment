@@ -1,0 +1,16 @@
+{
+  "experiment": "a8_label_smoothing",
+  "fold": 0,
+  "seed": 0,
+  "final_train_acc": 0.990625,
+  "final_val_acc": 0.8333333134651184,
+  "params": 1176752,
+  "train_time_s": 348,
+  "overrides": [],
+  "environment": {
+    "python": "3.12.3",
+    "torch": "2.12.1+cu130",
+    "cuda": "13.0",
+    "device": "NVIDIA RTX A5000"
+  }
+}

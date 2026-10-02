@@ -1,0 +1,32 @@
+t3_r18_places_linear | fold 3 | seed 1 | cuda | 11,184,720 parameters
+epoch   1 | train loss 2.639 acc 0.182 | val loss 2.175 acc 0.558 | 4s
+epoch   2 | train loss 1.613 acc 0.778 | val loss 1.018 acc 0.890 | 6s
+epoch   3 | train loss 0.753 acc 0.902 | val loss 0.554 acc 0.917 | 9s
+epoch   4 | train loss 0.473 acc 0.923 | val loss 0.402 acc 0.929 | 12s
+epoch   5 | train loss 0.356 acc 0.933 | val loss 0.344 acc 0.933 | 15s
+epoch   6 | train loss 0.307 acc 0.933 | val loss 0.302 acc 0.933 | 18s
+epoch   7 | train loss 0.265 acc 0.945 | val loss 0.281 acc 0.925 | 20s
+epoch   8 | train loss 0.240 acc 0.953 | val loss 0.261 acc 0.933 | 24s
+epoch   9 | train loss 0.221 acc 0.953 | val loss 0.252 acc 0.933 | 27s
+epoch  10 | train loss 0.198 acc 0.962 | val loss 0.236 acc 0.938 | 31s
+epoch  11 | train loss 0.190 acc 0.954 | val loss 0.232 acc 0.935 | 35s
+epoch  12 | train loss 0.180 acc 0.957 | val loss 0.224 acc 0.931 | 39s
+epoch  13 | train loss 0.173 acc 0.960 | val loss 0.224 acc 0.935 | 44s
+epoch  14 | train loss 0.171 acc 0.963 | val loss 0.215 acc 0.935 | 48s
+epoch  15 | train loss 0.163 acc 0.961 | val loss 0.215 acc 0.938 | 52s
+epoch  16 | train loss 0.146 acc 0.971 | val loss 0.208 acc 0.935 | 56s
+epoch  17 | train loss 0.152 acc 0.964 | val loss 0.207 acc 0.929 | 61s
+epoch  18 | train loss 0.141 acc 0.972 | val loss 0.207 acc 0.929 | 65s
+epoch  19 | train loss 0.141 acc 0.970 | val loss 0.207 acc 0.931 | 70s
+epoch  20 | train loss 0.138 acc 0.970 | val loss 0.201 acc 0.940 | 74s
+epoch  21 | train loss 0.134 acc 0.971 | val loss 0.201 acc 0.938 | 78s
+epoch  22 | train loss 0.134 acc 0.970 | val loss 0.201 acc 0.938 | 83s
+epoch  23 | train loss 0.137 acc 0.970 | val loss 0.201 acc 0.938 | 87s
+epoch  24 | train loss 0.131 acc 0.971 | val loss 0.200 acc 0.935 | 91s
+epoch  25 | train loss 0.127 acc 0.975 | val loss 0.200 acc 0.940 | 95s
+epoch  26 | train loss 0.137 acc 0.970 | val loss 0.200 acc 0.935 | 98s
+epoch  27 | train loss 0.133 acc 0.974 | val loss 0.200 acc 0.940 | 103s
+epoch  28 | train loss 0.130 acc 0.970 | val loss 0.200 acc 0.940 | 106s
+epoch  29 | train loss 0.131 acc 0.973 | val loss 0.200 acc 0.938 | 110s
+epoch  30 | train loss 0.131 acc 0.973 | val loss 0.200 acc 0.938 | 113s
+final validation accuracy 0.9375

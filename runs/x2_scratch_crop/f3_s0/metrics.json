@@ -1,0 +1,16 @@
+{
+  "experiment": "x2_scratch_crop",
+  "fold": 3,
+  "seed": 0,
+  "final_train_acc": 0.9921875,
+  "final_val_acc": 0.6583333611488342,
+  "params": 1176752,
+  "train_time_s": 84,
+  "overrides": [],
+  "environment": {
+    "python": "3.12.3",
+    "torch": "2.12.1+cu130",
+    "cuda": "13.0",
+    "device": "NVIDIA RTX A5000"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "experiment": "t1_r18_imagenet_linear",
+  "fold": 4,
+  "seed": 1,
+  "final_train_acc": 0.9494791666666667,
+  "final_val_acc": 0.90625,
+  "params": 11184720,
+  "train_time_s": 140,
+  "overrides": [],
+  "environment": {
+    "python": "3.12.3",
+    "torch": "2.12.1+cu130",
+    "cuda": "13.0",
+    "device": "NVIDIA RTX A5000"
+  }
+}

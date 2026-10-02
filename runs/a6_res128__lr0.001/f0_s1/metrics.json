@@ -1,0 +1,18 @@
+{
+  "experiment": "a6_res128__lr0.001",
+  "fold": 0,
+  "seed": 1,
+  "final_train_acc": 0.9890625,
+  "final_val_acc": 0.8604166507720947,
+  "params": 1176752,
+  "train_time_s": 360,
+  "overrides": [
+    "optim.lr=0.001"
+  ],
+  "environment": {
+    "python": "3.12.3",
+    "torch": "2.12.1+cu130",
+    "cuda": "13.0",
+    "device": "NVIDIA RTX A5000"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "experiment": "a9_dropout",
+  "fold": 3,
+  "seed": 0,
+  "final_train_acc": 0.965625,
+  "final_val_acc": 0.8500000238418579,
+  "params": 1176752,
+  "train_time_s": 288,
+  "overrides": [],
+  "environment": {
+    "python": "3.12.3",
+    "torch": "2.12.1+cu130",
+    "cuda": "13.0",
+    "device": "NVIDIA RTX A5000"
+  }
+}

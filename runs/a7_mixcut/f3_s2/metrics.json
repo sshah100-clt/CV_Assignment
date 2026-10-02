@@ -1,0 +1,16 @@
+{
+  "experiment": "a7_mixcut",
+  "fold": 3,
+  "seed": 2,
+  "final_train_acc": 0.7849456071853638,
+  "final_val_acc": 0.831250011920929,
+  "params": 1176752,
+  "train_time_s": 340,
+  "overrides": [],
+  "environment": {
+    "python": "3.12.3",
+    "torch": "2.12.1+cu130",
+    "cuda": "13.0",
+    "device": "NVIDIA RTX A5000"
+  }
+}

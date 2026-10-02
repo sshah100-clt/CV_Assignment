@@ -1,0 +1,16 @@
+{
+  "experiment": "a1_simple_cnn",
+  "fold": 3,
+  "seed": 2,
+  "final_train_acc": 0.9760416666666667,
+  "final_val_acc": 0.6916666626930237,
+  "params": 1176752,
+  "train_time_s": 86,
+  "overrides": [],
+  "environment": {
+    "python": "3.12.3",
+    "torch": "2.12.1+cu130",
+    "cuda": "13.0",
+    "device": "NVIDIA RTX A5000"
+  }
+}

@@ -1,0 +1,39 @@
+data:
+  root: data
+  split_file: splits/folds.json
+  fold: 1
+  img_size: 64
+  color: gray
+  channels: 1
+  normalize: half
+  resize_mode: squash
+  num_workers: 6
+  augment:
+    random_resized_crop: null
+    hflip: false
+model:
+  name: simple_cnn
+  widths:
+  - 32
+  - 64
+  - 128
+  - 256
+  dropout: 0.0
+  attention: none
+  pool: avg
+  pretrained: none
+  freeze_backbone: false
+optim:
+  name: adamw
+  lr: 0.002
+  weight_decay: 0.05
+  backbone_lr_mult: 1.0
+schedule:
+  name: cosine
+  warmup_epochs: 3
+train:
+  epochs: 60
+  batch_size: 64
+  label_smoothing: 0.0
+  mixup_alpha: 0.0
+  cutmix_alpha: 0.0

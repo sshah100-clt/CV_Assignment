@@ -1,0 +1,16 @@
+{
+  "experiment": "t4_r18_places_ft",
+  "fold": 0,
+  "seed": 2,
+  "final_train_acc": 0.9994791666666667,
+  "final_val_acc": 0.9666666388511658,
+  "params": 11184720,
+  "train_time_s": 236,
+  "overrides": [],
+  "environment": {
+    "python": "3.12.3",
+    "torch": "2.12.1+cu130",
+    "cuda": "13.0",
+    "device": "NVIDIA RTX A5000"
+  }
+}

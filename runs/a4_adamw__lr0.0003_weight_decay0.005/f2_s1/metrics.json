@@ -1,0 +1,19 @@
+{
+  "experiment": "a4_adamw__lr0.0003_weight_decay0.005",
+  "fold": 2,
+  "seed": 1,
+  "final_train_acc": 1.0,
+  "final_val_acc": 0.731249988079071,
+  "params": 1176752,
+  "train_time_s": 144,
+  "overrides": [
+    "optim.lr=0.0003",
+    "optim.weight_decay=0.005"
+  ],
+  "environment": {
+    "python": "3.12.3",
+    "torch": "2.12.1+cu130",
+    "cuda": "13.0",
+    "device": "NVIDIA RTX A5000"
+  }
+}
